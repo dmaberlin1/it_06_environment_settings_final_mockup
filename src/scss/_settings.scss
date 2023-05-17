@@ -16,7 +16,7 @@ html {
 
 body {
   overflow-anchor: none;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'TT Lakes', sans-serif;
   color: $main-text-color;
   background-color: $background;
@@ -33,9 +33,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+
+
 img {
   height: auto;
-  max-width: 100%;
+  //max-width: 100%;
   object-fit: cover;
 }
 

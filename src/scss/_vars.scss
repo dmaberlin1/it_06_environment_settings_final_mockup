@@ -12,10 +12,12 @@ $link-color--hover: #003f9c;
 $dark-gray: #222222;
 $dark-input: #414141;
 $dark: #212529;
-$black: #000;
+$black: #1B1C21;
 
 
 $background: #F8F8F8;
+$background-main:#F2F2F2;
+$background-h2:linear-gradient(270deg, $white 0%, $background-main 98.61%);
 $footer-background: #1B1C21;
 $main-text-color: #1B1C21;
 $menu-text-color: #7E7E82 ;
