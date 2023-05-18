@@ -3,7 +3,10 @@
 @import "vendor";
 @import "vars";
 @import "settings";
-
+@import "sidebar";
+@import "header";
+@import "modal-callback.scss";
+@import "modal-book-call";
 
 h2 {
   font-size: 16px;
@@ -27,11 +30,7 @@ h2 {
 }
 
 
-.side-bar {
-  background: #6d6d6d;
-  display: flex;
-  width: 308px;
-}
+
 
 .main-wrapper {
   display: flex;
@@ -41,108 +40,6 @@ h2 {
 
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-
-  &-topbar {
-    margin: 42px 30px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    &-buttons {
-      display: flex;
-      flex-direction: row;
-      gap: 32px;
-
-      a {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        //color: $black;
-        font-size: 16px;
-        line-height: 24px;
-
-        p {
-          font-size: 16px;
-          line-height: 24px;
-          letter-spacing: -0.2px;
-          font-weight: 500;
-        }
-      }
-    }
-
-    &-nav {
-      margin: 8px 0 0 34px;
-      display: flex;
-      flex-direction: row;
-      //max-width: 1064px;
-      flex-wrap: wrap;
-      gap: 8px;
-
-      a {
-        //width: 233px;
-        padding: 8px 10px;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        color: #7E7E82;
-      }
-
-      a:active {
-        border: 2px solid #B8FFEC;
-        background: $white;
-        border-radius: 5px;
-      }
-    }
-  }
-
-  &-content {
-    display: flex;
-    flex-direction: row;
-    margin: 16px 28px 0 34px;
-    gap: 36px;
-
-    &-info {
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.2px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-
-      &-paras {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        max-height: 160px;
-        overflow: hidden;
-
-        span {
-          font-weight: 500;
-        }
-      }
-
-      &-btn {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-width: 132px;
-        max-height: 24px;
-        border: none;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        font-weight: 500;
-
-        :hover {
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}
 
 .repairs {
   margin: 52px 0 32px 32px;
@@ -186,6 +83,7 @@ h2 {
     &-btn {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       flex-wrap: wrap;
       max-width: 132px;
       max-height: 24px;
@@ -194,7 +92,10 @@ h2 {
       line-height: 24px;
       letter-spacing: -0.2px;
       font-weight: 500;
-
+      span{
+        padding-left: 8px;
+        padding-bottom: 6px;
+      }
       :hover {
         cursor: pointer;
       }
@@ -245,6 +146,7 @@ h2 {
     .btn-show {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       flex-wrap: wrap;
       max-width: 132px;
       max-height: 24px;
@@ -253,7 +155,10 @@ h2 {
       line-height: 24px;
       letter-spacing: -0.2px;
       font-weight: 500;
-
+      span{
+        padding-left: 8px;
+        padding-bottom: 6px;
+      }
       :hover {
         cursor: pointer;
       }
@@ -264,8 +169,10 @@ h2 {
 
 .services {
   margin: 65px 0 32px 32px;
-  //display: flex;
-  //flex-direction: column;
+  h2{
+    padding-left: 22px;
+    margin-right: 18px;
+  }
   .table-services {
 
     margin: 30px 48px 0 36px;

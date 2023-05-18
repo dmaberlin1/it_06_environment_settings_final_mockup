@@ -1,0 +1,117 @@
+@import "vars";
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+
+
+  &-topbar {
+    margin: 42px 30px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h1{
+      padding-left: 30px;
+    }
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        //color: $black;
+        font-size: 16px;
+        line-height: 24px;
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-nav {
+      margin: 8px 50px 0 38px;
+      display: flex;
+      flex-direction: row;
+      //max-width: 1064px;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      a {
+        //width: 233px;
+        padding: 8px 10px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+      }
+
+      a:active {
+        border: 2px solid #B8FFEC;
+        background: $white;
+        border-radius: 3.2px;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 28px 0 34px;
+    gap: 36px;
+
+    &-info {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      &-paras {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-height: 160px;
+        overflow: hidden;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      &-btn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 132px;
+        max-height: 24px;
+        border: none;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+        span{
+          padding-left: 8px;
+          padding-bottom: 6px;
+        }
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .active{
+    border-left: 5px solid $border-color;
+    border-radius: 4px;
+  }
+  //end of header
+}

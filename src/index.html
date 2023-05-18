@@ -9,12 +9,46 @@
 <body>
 <div class="wrapper-body">
     <div class="side-bar">
-        <h3>side-bar</h3>
+        <div class="side-bar-head">
+            <img src="./assets/img/mainlogo.png" alt="mainlogo">
+            <button><img src="./assets/img/search.png" alt="search"></button>
+        </div>
+        <div class="side-bar-nav">
+            <a href="#">Ремонт техники</a>
+            <a href="#" class="active">Услуги и сервисы</a>
+            <a href="#">Корпоративным клиентам</a>
+            <a href="#">Продавцам техники</a>
+            <a href="#">Партнерам</a>
+            <a href="#">Производителям</a>
+            <a href="#">Наши сервисные центры</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="side-bar-links">
+            <button class="btn-book-call"><img src="./assets/img/phone.png" alt="profile"></button>
+            <button class="btn-callback">
+                <img src="./assets/img/chat.png" alt="profile">
+            </button>
+
+            <button>
+                <img src="./assets/img/profile.png" alt="profile">
+            </button>
+        </div>
+        <div class="side-bar-contacts">
+            <a draggable="false" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a draggable="false" href="tel:8 800 890 8900"> 8 800 890 8900</a>
+        </div>
+        <div class="side-bar-languages">
+            <button class="active-lang">RU</button>
+            <button>EN</button>
+            <button>CH</button>
+        </div>
+
+
     </div>
     <div class="main-wrapper">
         <header class="header">
             <div class="header-topbar">
-                <div class="header-topbar-title">
+                <div class="header-topbar-title active">
                     <h1>Услуги и сервисы</h1>
                 </div>
                 <div class="header-topbar-buttons">
@@ -186,17 +220,15 @@
             <div class="services-wrapper-cards">
 
 
-
-
                 <div class="card-services">
 
-                        <div>Диагностика</div>
-                        <div>Бесплатно</div>
-                        <div>30 мин</div>
-                        <button>
-                            <span>ЗАКАЗАТЬ</span>
-                            <img src="assets/img/arrow_single_right_white.svg" alt="arrow-right">
-                        </button>
+                    <div>Диагностика</div>
+                    <div>Бесплатно</div>
+                    <div>30 мин</div>
+                    <button>
+                        <span>ЗАКАЗАТЬ</span>
+                        <img src="assets/img/arrow_single_right_white.svg" alt="arrow-right">
+                    </button>
 
                 </div>
                 <div class="card-services">
@@ -263,6 +295,48 @@
             </div>
         </footer>
     </div>
+</div>
+
+<div class="overlay"></div>
+<div class="modal-callback">
+    <h3>Обратная связь</h3>
+    <div class="modal-callback-form">
+        <input type="text" placeholder="Имя">
+        <input type="tel" placeholder="Телефон">
+        <input type="email" placeholder="Электронная почта">
+        <textarea id="message"
+                  placeholder="Сообщение"
+                   name="message"
+                  rows="5" cols="28"></textarea>
+    </div>
+    <div class="modal-callback-send">
+        <div class="modal-callback-send-info">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></div>
+        <button class="btn-callback-send">
+            <span>ОТПРАВИТЬ</span>
+            <img src="assets/img/arrow-right.svg" alt="arrow-right">
+        </button>
+    </div>
+
+    <button class="modal-callback-btn-close"
+            id="close-callback">
+        <img src="./assets/img/close-modal.png" alt="close-modal">
+    </button>
+</div>
+<div class="modal-book-call">
+    <h3>Заказать звонок</h3>
+    <div class="modal-book-call-form">
+        <input type="tel" placeholder="Телефон">
+    </div>
+    <div class="modal-book-call-send">
+        <div class="modal-book-call-send-info">Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и соглашаетесь с нашей <span>политикой конфиденциальности</span></div>
+        <button class="btn-book-call-send">
+            <span>ОТПРАВИТЬ</span>
+            <img src="assets/img/arrow-right.svg" alt="arrow-right">
+        </button>
+    </div>
+    <button class="modal-book-call-btn-close" id="close-book-call">
+        <img src="./assets/img/close-modal.png" alt="close-modal">
+    </button>
 </div>
 </body>
 </html>

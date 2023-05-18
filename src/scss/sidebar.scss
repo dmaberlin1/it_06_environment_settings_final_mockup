@@ -1,0 +1,83 @@
+@import "vars";
+.side-bar {
+  background:$white;
+  display: flex;
+  flex-direction: column;
+  width: 308px;
+  img{background: $white}
+  button{background: $white}
+  &-head{
+    margin: 30px 28px 0 22px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+  }
+  &-nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    //padding-left: 24px;
+    gap: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    letter-spacing: -0.2px;
+    a{
+      padding-left: 24px;
+      font-weight: 500;
+
+    }
+    .active{
+      color: $menu-text-color;
+      border-left: 4px solid $border-color;
+      border-radius: 3.2px;
+      //padding-left: 5px;
+    }
+  }
+  &-links{
+    display: flex;
+    margin: 240px 0 0 18px;
+    gap:16px;
+    :hover{
+    cursor: pointer;
+    }
+  }
+  &-contacts{
+    font-weight: 600;
+    margin: 16px 0 0 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    :first-child{
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+      letter-spacing: -0.2px;
+    }
+    :last-child{
+      font-size: 24px;
+      line-height: 32px;
+      /* or 133% */
+      letter-spacing: -0.6px;
+    }
+  }
+  &-languages{
+    margin: 16px 0 0 21px;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    letter-spacing: -0.2px;
+    .active-lang{
+      color:$menu-text-color
+    }
+    button:hover{
+      cursor: pointer;
+    }
+  }
+}
+
