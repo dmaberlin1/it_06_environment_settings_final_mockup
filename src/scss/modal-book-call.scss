@@ -19,7 +19,7 @@ h3{
   z-index: 5;
   top: 0;
   right: 0;
-  width: 440px;
+  max-width: 440px;
   height: 100%;
   background-color: $white;
   border: 1px solid #ccc;
@@ -109,7 +109,28 @@ h3{
       }
     }
   }
+
+  //end of modal-book-call
+
 }
+
+@media (max-width: 550px) and (hover: none) and (pointer: coarse) {
+  .modal-book-call {
+    width: 300px;
+    padding-top: 100px;
+    &-btn-close {
+      background: none;
+      position: fixed;
+      top: 24px;
+      right: 230px;
+
+    }
+  }
+  .wrapper-body{
+    display: none;
+  }
+}
+
 .overlay {
   display: none;
   position: fixed;

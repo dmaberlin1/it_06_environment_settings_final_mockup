@@ -35,7 +35,7 @@ h2 {
 .main-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1120px;
+  max-width: 1120px;
   background: $background-main;
 
 }
@@ -54,6 +54,7 @@ h2 {
     &-cards {
       margin-top: 24px;
       display: grid;
+
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-column-gap: 16px;
@@ -79,6 +80,40 @@ h2 {
         }
       }
     }
+
+    &-cards-slider {
+      margin-top: 24px;
+      display: none;
+
+
+      .brands{
+        top:904px;
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-height: 12px;
+      }
+      max-height: 160px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    .swiper-wrapper{
+      //overflow: hidden;
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 240px;
+        height: 72px;
+        background-color: $white;
+        padding: 0 16px;
+        box-sizing: border-box;
+        border-radius: 6px;
+
+        .go:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    }
+
 
     &-btn {
       display: flex;
@@ -140,6 +175,44 @@ h2 {
           cursor: pointer;
         }
 
+      }
+    }
+
+    &-cards-slider {
+      margin-top: 24px;
+      display: none;
+      //width: 240px;
+      max-height: 160px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      .technical{
+        top:1240px;
+        padding-right: 40px;
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-height: 12px;
+      }
+      .swiper-wrapper{
+      .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 240px;
+        height: 160px;
+        background-color: $white;
+        padding: 16px 16px;
+        box-sizing: border-box;
+        border-radius: 6px;
+
+        .go {
+          align-self: end;
+        }
+
+        .go:hover {
+          cursor: pointer;
+        }
+
+      }
       }
     }
 
@@ -278,3 +351,157 @@ display: flex;
 }
 }
 
+@media(max-width: 1366px){
+  .repairs {
+    margin: 52px 0 0 0;}
+
+}
+
+@media(max-width: 1280px){
+
+    .repairs-wrapper-brands-cards {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      max-height: 160px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+  .repairs-wrapper-technical-cards {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 22px;
+    max-height: 160px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+
+
+}
+
+@media(max-width: 1050px){
+  .repairs-wrapper-brands-cards {
+    grid-column-gap: 0;
+    .card {
+      width:220px
+    }
+  }
+
+  .repairs-wrapper-technical-cards {
+    grid-column-gap: 8px;
+
+    .card-tech{
+      width: 220px
+    }
+  }
+
+}
+
+@media(max-width: 740px){
+  .services {
+    margin: 65px 0 0 0;
+    &-wrapper-cards{
+      padding: 0 0;
+      .card-services{
+        grid-template-columns: 0.4fr 0.3fr 0.2fr 0.6fr;
+      }
+    }
+  }
+  .repairs-wrapper-brands-cards {
+    grid-column-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      width:220px
+    }
+  }
+
+  .repairs-wrapper-technical-cards {
+    grid-column-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    .card-tech{
+      width: 220px
+    }
+  }
+
+}
+
+
+@media(max-width: 740px){
+  .services {
+    margin: 65px 0 0 0;
+    &-wrapper-cards{
+      padding: 0 0;
+      .card-services{
+        grid-template-columns: 0.4fr 0.3fr 0.2fr 0.6fr;
+      }
+    }
+  }
+  .repairs-wrapper-brands-cards {
+    grid-column-gap: 0;
+    grid-template-columns: repeat(2, 1fr);
+    .card {
+      width:220px
+    }
+  }
+
+  .repairs-wrapper-technical-cards {
+    grid-column-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    .card-tech{
+      width: 220px
+    }
+  }
+
+}
+
+@media (max-width: 500px) {
+  .repairs-wrapper-technical-cards{
+    display: none;
+  }
+  .repairs-wrapper-technical-cards-slider{
+    display: flex;
+  }
+  .technical-btn{
+    display:none !important; ;
+  }
+  .wrapper-body{
+    max-width: 320px;
+  }
+  .main-wrapper{
+    max-width: 320px;
+  }
+  .footer{
+    flex-direction: column;
+    margin-bottom: 20px;
+    //align-items: center;
+    &-wrapper{
+      text-align: center;
+      padding: 20px 0 0 0;
+      max-width: 310px;
+
+    }
+  }
+
+  .services{
+    &-info{
+      max-width: 280px;
+    }
+  }
+  .repairs-wrapper-brands-cards{
+    display: none;
+  }
+  .repairs-wrapper-brands-cards-slider{
+    display: block;
+  }
+  .repairs-wrapper-brands-btn{
+    display: none;
+  }
+}

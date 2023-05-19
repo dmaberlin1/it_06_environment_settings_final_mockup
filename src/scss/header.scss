@@ -4,8 +4,6 @@
   display: flex;
   flex-direction: column;
 
-
-
   &-topbar {
     margin: 42px 30px 0 0;
     display: flex;
@@ -59,6 +57,35 @@
         border-radius: 3.2px;
       }
     }
+
+    &-nav-slider {
+      margin: 24px 0 0 20px;
+      display: flex;
+      flex-direction: row;
+      //max-width: 1064px;
+      flex-wrap: wrap;
+      gap: 8px;
+      overflow: hidden;
+      a {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #7E7E82;
+        border-radius: 6px;
+      }
+
+      a:active {
+        border: 2px solid #B8FFEC;
+        background: $white;
+        border-radius: 6px;
+      }
+    }
   }
 
   &-content {
@@ -74,6 +101,9 @@
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      //вариант с заданной шириной блока, для резайза img
+      width: 490px;
 
       &-paras {
         display: flex;
@@ -108,10 +138,186 @@
         }
       }
     }
+    &-image{
+      display: inline-flex;
+
+      img{
+       width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
   }
   .active{
     border-left: 5px solid $border-color;
     border-radius: 4px;
   }
+
+  &-menu-media{
+    //display: flex;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    background: $white;
+    height: 88px;
+    .rightside{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .leftside{
+      display: flex;
+      gap: 20px;
+    }
+    button{
+      background: white;
+    }
+
+   &-burger{
+     padding-left: 24px;
+     img{
+       height: 40px;
+       width: 40px;
+     }
+   }
+
+    &-logo{
+      display: flex;
+      align-items: center;
+
+    }
+    &-links{
+      display: flex;
+      gap:16px;
+      align-items: center;
+      :hover{
+        cursor: pointer;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+
+    }
+
+    .divider{
+      height: 32px;
+      width: 2px;
+      margin-right: 20px;
+    }
+  }
+
   //end of header
 }
+
+@media(max-width: 1250px){
+
+}
+
+@media (max-width: 1050px) {
+  .header-menu-media{
+    display: flex;
+  }
+
+  .header-topbar-buttons{
+    display: none;
+  }
+  .header-content-image{
+    //margin-left: 50px;
+    img{
+      max-width: 360px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .header-menu-media{
+    justify-content: start;
+    gap: 10px;
+    .divider{
+      margin-right: 3px;
+    }
+    .leftside{
+      gap: 0;
+    }
+    .rightside{
+      gap: 3px;
+    }
+    &-links{
+      gap: 2px;
+    }
+    &-buttons{
+      gap: 3px;
+    }
+  }
+  .header-content-info{
+    width: 142px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-menu-media {
+    &-burger {
+      padding-left: 16px;
+    }
+
+    &-logo {
+      margin-left: 16px;
+
+      .divider {
+        display: none;
+      }
+    }
+
+    &-links {
+      display: none;
+    }
+
+    &-buttons {
+      gap: 16px;
+    }
+  }
+  .header {
+    &-topbar {
+      h1 {
+        padding-left: 9px;
+      }
+
+      &-nav {
+        display: none;
+      }
+    }
+
+    &-content {
+      flex-direction: column;
+      margin: 16px 0 0 16px;
+      max-width: 320px;
+
+      &-info-paras {
+        width: 275px;
+      }
+
+      &-image {
+        margin-left: -16px !important;
+        max-width: 320px;
+        //overflow: unset;
+        img {
+          max-width: 300px;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+
+  }
+}
+
+
+

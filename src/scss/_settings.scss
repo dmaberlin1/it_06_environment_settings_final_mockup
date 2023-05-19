@@ -1,8 +1,11 @@
 @import "vars";
 
+
+
 html {
   box-sizing: border-box;
 }
+
 
 *,
 *::before,
@@ -93,6 +96,12 @@ footer {
 .btn:focus {
   outline: none;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: $menu-text-color !important;
+}
+
+
 
 //.error {
 //  border: 2px var(--error-red) solid !important;

@@ -120,6 +120,24 @@ h3{
     }
   }
 }
+
+@media (max-width: 550px) and (hover: none) and (pointer: coarse) {
+  .modal-callback {
+    width: 300px;
+    padding-top: 100px;
+    &-btn-close {
+      background: none;
+      position: fixed;
+      top: 24px;
+      right: 230px;
+
+    }
+  }
+  .wrapper-body{
+    display: none;
+  }
+}
+
 .overlay {
   display: none;
   position: fixed;
