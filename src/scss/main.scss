@@ -246,7 +246,7 @@ h2 {
     padding-left: 22px;
     margin-right: 18px;
   }
-  .table-services {
+  .services-table {
 
     margin: 30px 48px 0 36px;
     display: grid;
@@ -316,6 +316,89 @@ h2 {
       }
     }
 
+  }
+
+  &-wrapper-cards-slider {
+    margin: 30px 0 0 0;
+    //background: $background;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0 0 0 8px ;
+     overflow: hidden;
+    width: 320px;
+    .services{
+      top:1540px;
+      padding-right: 40px;
+      --swiper-pagination-bullet-width: 11px;
+      --swiper-pagination-bullet-height: 11px;
+    }
+    .swiper-wrapper{
+
+      .swiper-slide {
+      display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+      //align-items: center;
+        width: 260px;
+        height:200px;
+      padding: 0 2px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      background: none;
+      border-bottom: 2px solid $soft-gray;
+        background: $background;
+      p{
+        color:$menu-text-color;
+        font-size: 14px;
+        line-height: 16px;
+        opacity: 0.85;
+      }
+      div{
+        display: flex;
+        //display: inline-flex;
+        margin-left: 16px;
+        gap: 4px;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+
+      }
+        div:first-child{
+          padding-top: 16px;
+        }
+      button{
+        //display: flex;
+        display: inline-flex;
+        height: 32px;
+        //width: 119px;
+        position: absolute;
+        top: 154px;
+        left: 126px;
+        flex-grow: 0;
+        //элемент по ширине
+        flex-direction: row;
+        align-items: center;
+        border-radius: 16px;
+        padding: 4px 10px;
+        gap: 14px;
+        color: $white;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        background: $background-buttons;
+        border: none;
+        //ширина на весь контент
+        width: max-content;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    }
   }
 
   &-info{
@@ -405,6 +488,13 @@ display: flex;
 
 }
 
+@media(max-width: 890px) {
+  .wrapper-body{
+    //max-width: 720px;
+  }
+
+}
+
 @media(max-width: 740px){
   .services {
     margin: 65px 0 0 0;
@@ -434,33 +524,6 @@ display: flex;
 }
 
 
-@media(max-width: 740px){
-  .services {
-    margin: 65px 0 0 0;
-    &-wrapper-cards{
-      padding: 0 0;
-      .card-services{
-        grid-template-columns: 0.4fr 0.3fr 0.2fr 0.6fr;
-      }
-    }
-  }
-  .repairs-wrapper-brands-cards {
-    grid-column-gap: 0;
-    grid-template-columns: repeat(2, 1fr);
-    .card {
-      width:220px
-    }
-  }
-
-  .repairs-wrapper-technical-cards {
-    grid-column-gap: 8px;
-    grid-template-columns: repeat(2, 1fr);
-    .card-tech{
-      width: 220px
-    }
-  }
-
-}
 
 @media (max-width: 500px) {
   .repairs-wrapper-technical-cards{
@@ -490,11 +553,20 @@ display: flex;
     }
   }
 
-  .services{
+
+  .services {
+    .services-table {
+      display: none;
+    }
+    &-wrapper-cards{
+      display: none;
+    }
     &-info{
       max-width: 280px;
     }
   }
+
+
   .repairs-wrapper-brands-cards{
     display: none;
   }

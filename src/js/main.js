@@ -60,7 +60,32 @@ btnSendBookCall.addEventListener('click',closeModal)
 
 console.log(window.innerWidth)
 if(window.innerWidth>720 && window.innerWidth<890){
-    console.log('a')
+    console.log('>720 && <890')
+
+    const swiperHeaderNav=new Swiper(
+        '.sliderHeaderNav',{
+            width: 200,
+            slidesPerView: 1,
+            centeredSlides: true,
+            // watchOverflow:true,
+            centeredSlidesBounds: true,
+            spaceBetween:20,
+            // navigation:{
+            //     nextEl:'.swiper-button-next',
+            //     prevEl:'.swiper-button-prev'
+            // },
+            pagination:{
+                el:'.swiper-pagination',
+                mousewhell:true,
+                keyboard:true,
+                clickable: true
+            },
+            centeredSlidesOffset: 140,
+            loop:true,
+
+        })
+
+
 }
 
 if (window.innerWidth<720){
@@ -71,7 +96,7 @@ if (window.innerWidth<720){
 
     // showAllBtn.remove()
     // wrapper.remove()
-    console.log('work')
+    console.log('window.innerWidth<720')
 
     // код, который будет загружаться на мобильных устройствах
     const swiperBrands=new Swiper(
@@ -146,4 +171,30 @@ if (window.innerWidth<720){
 
         })
 
+    const swiperServices=new Swiper(
+        '.swiperServices',{
+            width: 260,
+            height:200,
+            slidesPerView: 1,
+            // centeredSlides: true,
+            // watchOverflow:true,
+            centeredSlidesBounds: true,
+            spaceBetween:16,
+            // navigation:{
+            //     nextEl:'.swiper-button-next',
+            //     prevEl:'.swiper-button-prev'
+            // },
+            pagination:{
+                el:'.services',
+                mousewhell:true,
+                keyboard:true,
+                clickable: true
+            },
+            // centeredSlidesOffset: 140,
+            loop:true,
+
+        })
+
 }
+
+

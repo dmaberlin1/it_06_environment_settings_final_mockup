@@ -60,7 +60,7 @@
 
     &-nav-slider {
       margin: 24px 0 0 20px;
-      display: flex;
+      display: none;
       flex-direction: row;
       //max-width: 1064px;
       flex-wrap: wrap;
@@ -215,9 +215,7 @@
   //end of header
 }
 
-@media(max-width: 1250px){
 
-}
 
 @media (max-width: 1050px) {
   .header-menu-media{
@@ -236,6 +234,26 @@
     }
   }
 }
+
+@media(max-width: 890px) {
+  .header {
+    &-topbar {
+      h1 {
+        padding-left: 9px;
+      }
+
+      &-nav {
+        display: none;
+      }
+
+      &-nav-slider {
+        max-width: 720px;
+        display: flex;
+      }
+    }
+  }
+}
+
 
 @media (max-width: 620px) {
   .header-menu-media{
@@ -261,6 +279,7 @@
     width: 142px;
   }
 }
+
 
 @media (max-width: 500px) {
   .header-menu-media {
@@ -292,6 +311,9 @@
 
       &-nav {
         display: none;
+      }
+      &-nav-slider{
+        display: flex;
       }
     }
 
