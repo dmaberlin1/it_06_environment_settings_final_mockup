@@ -150,3 +150,19 @@ h3{
   opacity: 0.93;
 }
 
+@media (max-width: 550px){
+  .modal-callback {
+    width: 300px;
+    padding-top: 100px;
+    &-btn-close {
+      background: none;
+      position: fixed;
+      top: 24px;
+      right: 230px;
+
+    }
+  }
+  .wrapper-body{
+    display: none;
+  }
+}

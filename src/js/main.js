@@ -2,6 +2,7 @@ import '../../node_modules/focus-visible/dist/focus-visible';
 import '../scss/main.scss';
 import '../index.html';
 // import './swipers.js'
+import './burger.js'
 
 let modalCallback = document.querySelector('.modal-callback');
 let modalBookCall = document.querySelector('.modal-book-call');
@@ -13,6 +14,8 @@ let btnCloseBookCall=document.querySelector('#close-book-call')
 let btnSendCallBack=document.querySelector('.btn-callback-send')
 let btnSendBookCall=document.querySelector('.btn-book-call-send')
 let wrapperBody=document.querySelector('.wrapper-body')
+
+
 // 4) По клику на кнопку с трубкой открывается модалка "заказать звонок"
 // 5) По клику на кнопку с сообщением открывается модалка "обратная связь"
 function openModalCallback() {
@@ -55,6 +58,9 @@ btnCloseBookCall.addEventListener('click',closeModal)
 //заглушка, в следующем можно заменить на отправку
 btnSendCallBack.addEventListener('click',closeModal)
 btnSendBookCall.addEventListener('click',closeModal)
+
+
+
 
 
 

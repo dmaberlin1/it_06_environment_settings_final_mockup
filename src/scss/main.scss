@@ -320,8 +320,9 @@ h2 {
 
   &-wrapper-cards-slider {
     margin: 30px 0 0 0;
-    //background: $background;
-    display: flex;
+
+    //display: flex;
+    display: none;
     flex-direction: column;
     gap: 1px;
     padding: 0 0 0 8px ;
@@ -535,8 +536,9 @@ display: flex;
   .technical-btn{
     display:none !important; ;
   }
+  //360px for burger menu
   .wrapper-body{
-    max-width: 320px;
+    max-width: 360px;
   }
   .main-wrapper{
     max-width: 320px;
@@ -564,7 +566,12 @@ display: flex;
     &-info{
       max-width: 280px;
     }
+    &-wrapper-cards-slider {
+
+      display: flex;
+       }
   }
+
 
 
   .repairs-wrapper-brands-cards{
@@ -576,4 +583,18 @@ display: flex;
   .repairs-wrapper-brands-btn{
     display: none;
   }
+}
+
+
+
+//убрать после настройки
+@media(max-width: 1050px){
+  //.side-bar{
+  //  //display: none;
+  //  width: 320px;
+  //}
+  //.main-wrapper{
+  //  display: none;
+  //}
+
 }

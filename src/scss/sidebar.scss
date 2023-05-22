@@ -1,9 +1,14 @@
 @import "vars";
+
 .side-bar {
   background:$white;
   display: flex;
   flex-direction: column;
   width: 308px;
+  z-index: 5;
+  .burger-close{
+    display: none;
+  }
   img{background: $white}
   button{background: $white}
   &-head{
@@ -84,6 +89,53 @@
 
 @media(max-width: 1050px){
   .side-bar{
+    position: absolute;
     display: none;
+    width: 360px;
+    height: 100vh;
+    border-right: 40px solid;
+    border-image: linear-gradient(to right, rgba(128, 128, 128, 0.14), $background-main ) 1 100%;
+    border-radius: 30px;
+    .burger-close{
+      display: flex;
+    }
+    &-head{
+      margin: 30px 24px 0 24px;
+      .burger-close img{
+        width: 40px;
+        height: 40px;
+
+      }
+    }
+    &-links {
+      display: flex;
+      margin: 190px 0 0 18px;
+      //margin: 100px 0 50px 18px;
+      gap: 16px;
+    }
   }
 }
+@media(max-width: 500px){
+  .side-bar{
+    width: 360px;
+    border: none;
+  }
+}
+
+@media(max-width: 330px){
+  .side-bar{
+    width: 320px;
+  }
+}
+@media(max-height: 800px){
+  .side-bar-nav {
+    margin-top: 26px;
+    gap: 20px;
+
+  }
+  .side-bar-links{
+    margin: 40px 0 0 18px;
+  }
+}
+
+
