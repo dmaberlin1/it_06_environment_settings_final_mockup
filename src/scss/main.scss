@@ -134,6 +134,10 @@ h2 {
       :hover {
         cursor: pointer;
       }
+      &-img{
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 
@@ -234,6 +238,10 @@ h2 {
       }
       :hover {
         cursor: pointer;
+      }
+      .technical-btn-img{
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -534,7 +542,7 @@ display: flex;
     display: flex;
   }
   .technical-btn{
-    display:none !important; ;
+    display:none !important;
   }
   //360px for burger menu
   .wrapper-body{

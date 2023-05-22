@@ -136,6 +136,10 @@
         :hover {
           cursor: pointer;
         }
+        &-img{
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
     &-image{

@@ -19,17 +19,21 @@ h3{
   z-index: 5;
   top: 0;
   right: 0;
-  max-width: 440px;
+  max-width: 450px;
   height: 100%;
   background-color: $white;
   border: 1px solid #ccc;
   padding: 40px 32px 0 0;
 
+  border-left: 8px solid;
+  border-image: linear-gradient(to left, rgba(128, 128, 128, 0.14), $background-main ) 1 100%;
+  border-radius: 30px;
+
   &-btn-close {
     background: none;
     position: fixed;
     top: 38px;
-    right: 460px;
+    right: 468px;
 
     :hover {
       cursor: pointer;
@@ -118,6 +122,7 @@ h3{
   .modal-book-call {
     width: 300px;
     padding-top: 100px;
+    border: none;
     &-btn-close {
       background: none;
       position: fixed;
@@ -143,3 +148,10 @@ h3{
   opacity: 0.93;
 }
 
+@media (max-width: 550px) {
+  border: none;
+  &-btn-close {
+    right: 230px;
+
+  }
+}
