@@ -1,8 +1,11 @@
 @import "vars";
 
+
+
 html {
   box-sizing: border-box;
 }
+
 
 *,
 *::before,
@@ -16,13 +19,18 @@ html {
 
 body {
   overflow-anchor: none;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'TT Lakes', sans-serif;
   color: $main-text-color;
   background-color: $background;
   scroll-behavior: smooth;
 }
-
+button{
+  font-weight: 600;
+  font-family: 'TT Lakes', serif;
+  border: none;
+  background: transparent;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -33,9 +41,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+
+
 img {
   height: auto;
-  max-width: 100%;
+  //max-width: 100%;
   object-fit: cover;
 }
 
@@ -88,23 +98,29 @@ footer {
   outline: none;
 }
 
-.error {
-  border: 2px var(--error-red) solid !important;
+.swiper-pagination-bullet-active {
+  background-color: $menu-text-color !important;
 }
 
-.container {
-  max-width: 1810px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
 
-  @media (max-width: 1200px) {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
 
-  @media (max-width: 576px) {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
+//.error {
+//  border: 2px var(--error-red) solid !important;
+//}
+
+//.container {
+//  max-width: 1810px;
+//  margin: 0 auto;
+//  padding-right: 20px;
+//  padding-left: 20px;
+//
+//  @media (max-width: 1200px) {
+//    padding-right: 50px;
+//    padding-left: 50px;
+//  }
+//
+//  @media (max-width: 576px) {
+//    padding-right: 15px;
+//    padding-left: 15px;
+//  }
+//}

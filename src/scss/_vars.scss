@@ -1,7 +1,7 @@
 $white: #fff;
 $light-gray: #efefef;
-$soft-gray: #ececec;
-$gray: #cacaca;
+$soft-gray: #EAEAEA;;
+$gray: #B5B6BC;
 $table-background: #6d6d6d;
 $error-red: #ff0000;
 $error-red-prehover: #ff7a7a;
@@ -12,11 +12,15 @@ $link-color--hover: #003f9c;
 $dark-gray: #222222;
 $dark-input: #414141;
 $dark: #212529;
-$black: #000;
+$black: #1B1C21;
 
 
 $background: #F8F8F8;
+$background-main: rgba(242, 242, 242, 0.22);
+$background-h2:linear-gradient(270deg, $white 0%, $background-main 98.61%);
+$background-buttons:#FF3E79;
 $footer-background: #1B1C21;
 $main-text-color: #1B1C21;
 $menu-text-color: #7E7E82 ;
-$border-color: #B8FFEC;
+$border-color: #41F6D7;
+
