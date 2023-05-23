@@ -14,6 +14,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
+    "@svgr/webpack": "^8.0.1",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",
@@ -38,7 +39,9 @@
   },
   "dependencies": {
     "focus-visible": "^5.2.0",
+    "jss-preset-default": "^10.10.0",
     "normalize.css": "^8.0.1",
+    "svgo": "^3.0.2",
     "swiper": "^9.3.2"
   }
 }
