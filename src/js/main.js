@@ -67,8 +67,8 @@ function readMoreHeader() {
         headerContentParas.style.maxHeight = '160px';
         btnReadMoreHeader.style.maxWidth='132px'
         btnReadMoreHeader.querySelector('div:first-child').innerHTML = `
-           <img src="../assets/img/arrow-down.svg" alt="down">
-           <img src="../assets/img/arrow-down.svg" alt="down">
+           <img src="./assets/img/arrow-down.svg" alt="down">
+           <img src="./assets/img/arrow-down.svg" alt="down">
         `;
         btnReadMoreHeader.querySelector('span').textContent = 'Читать далее';
         isShowReadMore=false
@@ -78,8 +78,8 @@ function readMoreHeader() {
         headerContentParas.style.maxHeight = '300px';
         btnReadMoreHeader.style.maxWidth='86px'
         btnReadMoreHeader.querySelector('div:first-child').innerHTML = `
-           <img src="../assets/img/arrow-up.svg" alt="down">
-           <img src="../assets/img/arrow-up.svg" alt="down">
+           <img src="./assets/img/arrow-up.svg" alt="down">
+           <img src="./assets/img/arrow-up.svg" alt="down">
         `;
     btnReadMoreHeader.querySelector('span').textContent = 'Скрыть';
         isShowReadMore=true
@@ -94,8 +94,8 @@ function showAllBrands() {
         repairsBrandsCards.style.maxHeight = '160px';
         btnShowAllBrands.style.maxWidth='132px'
        btnShowAllBrands.querySelector('div:first-child').innerHTML = `
-           <img src="../assets/img/arrow-down.svg" alt="down">
-           <img src="../assets/img/arrow-down.svg" alt="down">
+           <img src="./assets/img/arrow-down.svg" alt="down">
+           <img src="./assets/img/arrow-down.svg" alt="down">
         `;
         btnShowAllBrands.querySelector('span').textContent = 'Показать все';
         isShowAllBrands=false
@@ -105,8 +105,8 @@ function showAllBrands() {
         repairsBrandsCards.style.maxHeight = '338px';
         btnShowAllBrands.style.maxWidth='86px'
         btnShowAllBrands.querySelector('div:first-child').innerHTML = `
-           <img src="../assets/img/arrow-up.svg" alt="down">
-           <img src="../assets/img/arrow-up.svg" alt="down">
+           <img src="./assets/img/arrow-up.svg" alt="down">
+           <img src="./assets/img/arrow-up.svg" alt="down">
         `;
         btnShowAllBrands.querySelector('span').textContent = 'Скрыть';
         isShowAllBrands=true
@@ -121,8 +121,8 @@ function showAllTech() {
         repairsTechCards.style.maxHeight = '160px';
         btnShowAllTech.style.maxWidth='132px'
         btnShowAllTech.querySelector('div:first-child').innerHTML = `
-           <img src="../assets/img/arrow-down.svg" alt="down">
-           <img src="../assets/img/arrow-down.svg" alt="down">
+           <img src="./assets/img/arrow-down.svg" alt="down">
+           <img src="./assets/img/arrow-down.svg" alt="down">
         `;
         btnShowAllTech.querySelector('span').textContent = 'Показать все';
         isShowAllTech=false
@@ -132,8 +132,8 @@ function showAllTech() {
         repairsTechCards.style.maxHeight = '350px';
         btnShowAllTech.style.maxWidth='86px'
         btnShowAllTech.querySelector('div:first-child').innerHTML = `
-           <img src="../assets/img/arrow-up.svg" alt="down">
-           <img src="../assets/img/arrow-up.svg" alt="down">
+           <img src="./assets/img/arrow-up.svg" alt="down">
+           <img src="./assets/img/arrow-up.svg" alt="down">
         `;
         btnShowAllTech.querySelector('span').textContent = 'Скрыть';
         isShowAllTech=true
