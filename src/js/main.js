@@ -15,7 +15,7 @@ let btnSendCallBack=document.querySelector('.btn-callback-send')
 let btnSendBookCall=document.querySelector('.btn-book-call-send')
 let wrapperBody=document.querySelector('.wrapper-body')
 let sidebar=document.querySelector('.side-bar')
-let headerContentParas=document.querySelector('.header-content-info-paras')
+let headerContentParas=document.querySelector('.header__content__info__paras')
 let repairsBrandsCards=document.querySelector('.repairs-wrapper-brands-cards')
 let repairsTechCards=document.querySelector('.repairs-wrapper-technical-cards')
 let btnBookCallHeader=document.querySelector('#book-call-header')
@@ -29,11 +29,13 @@ let btnShowAllTech=document.querySelector('#show-all-tech')
 function openModalCallback() {
     if(window.innerWidth<720 ||window.matchMedia('(hover: none) and (pointer: coarse)').matches )
     {
+        document.body.style.overflowY='hidden';
         modalCallback.style.display = 'flex';
         wrapperBody.style.display='none'
         overlay.style.display = 'block';
         sidebar.style.zIndex='1';
     }else{
+        document.body.style.overflowY='hidden';
     modalCallback.style.display = 'flex';
     overlay.style.display = 'flex';
         sidebar.style.zIndex='1';
@@ -41,6 +43,7 @@ function openModalCallback() {
 }
 function openBookCall() {
     if(window.innerWidth<740||window.matchMedia('(hover: none) and (pointer: coarse)').matches ){
+        document.body.style.overflowY='hidden';
         wrapperBody.style.display='none'
         modalBookCall.style.display = 'block';
         modalBookCall.style.display = 'block';
@@ -48,6 +51,7 @@ function openBookCall() {
         sidebar.style.zIndex='1';
 
     }else{
+        document.body.style.overflowY='hidden';
     modalBookCall.style.display = 'block';
     modalBookCall.style.display = 'block';
     overlay.style.display = 'block';

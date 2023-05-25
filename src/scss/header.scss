@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
 
-  &-topbar {
+  &__topbar {
     margin: 42px 30px 0 0;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     h1{
       padding-left: 30px;
     }
-    &-buttons {
+    &__buttons {
       display: flex;
       flex-direction: row;
       gap: 32px;
@@ -34,7 +34,7 @@
       }
     }
 
-    &-nav {
+    &__nav {
       margin: 8px 50px 0 38px;
       display: flex;
       flex-direction: row;
@@ -53,12 +53,13 @@
 
       a:active {
         border: 2px solid #B8FFEC;
+        margin: -2px;
         background: $white;
         border-radius: 3.2px;
       }
     }
 
-    &-nav-slider {
+    &__nav__slider {
       margin: 24px 0 0 20px;
       display: none;
       flex-direction: row;
@@ -82,19 +83,20 @@
 
       a:active {
         border: 2px solid #B8FFEC;
+        margin: -2px;
         background: $white;
         border-radius: 6px;
       }
     }
   }
 
-  &-content {
+  &__content {
     display: flex;
     flex-direction: row;
     margin: 16px 28px 0 34px;
     gap: 36px;
 
-    &-info {
+    &__info {
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
@@ -105,7 +107,7 @@
       //вариант с заданной шириной блока, для резайза img
       width: 490px;
 
-      &-paras {
+      &__paras {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -117,7 +119,7 @@
         }
       }
 
-      &-btn {
+      &__btn {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -136,13 +138,13 @@
         :hover {
           cursor: pointer;
         }
-        &-img{
+        &__img{
           display: flex;
           flex-direction: column;
         }
       }
     }
-    &-image{
+    &__image{
       display: inline-flex;
 
       img{
@@ -157,7 +159,7 @@
     border-radius: 4px;
   }
 
-  &-menu-media{
+  &__menu__media{
     //display: flex;
     display: none;
     flex-direction: row;
@@ -179,7 +181,7 @@
       background: white;
     }
 
-   &-burger{
+   &__burger{
      padding-left: 24px;
      img{
        height: 40px;
@@ -187,12 +189,12 @@
      }
    }
 
-    &-logo{
+    &__logo{
       display: flex;
       align-items: center;
 
     }
-    &-links{
+    &__links{
       display: flex;
       gap:16px;
       align-items: center;
@@ -201,7 +203,7 @@
       }
     }
 
-    &-buttons {
+    &__buttons {
       display: flex;
       flex-direction: row;
       gap: 16px;
@@ -222,14 +224,14 @@
 
 
 @media (max-width: 1050px) {
-  .header-menu-media{
+  .header__menu__media{
     display: flex;
   }
 
-  .header-topbar-buttons{
+  .header__topbar__buttons{
     display: none;
   }
-  .header-content-image{
+  .header__content__image{
     //margin-left: 50px;
     img{
       max-width: 360px;
@@ -241,16 +243,16 @@
 
 @media(max-width: 890px) {
   .header {
-    &-topbar {
+    &__topbar {
       h1 {
         padding-left: 9px;
       }
 
-      &-nav {
+      &__nav {
         display: none;
       }
 
-      &-nav-slider {
+      &__nav__slider {
         max-width: 720px;
         display: flex;
       }
@@ -258,40 +260,64 @@
   }
 }
 
-
-@media (max-width: 620px) {
-  .header-menu-media{
+@media (max-width: 760px) {
+  .header__menu__media{
     justify-content: start;
-    gap: 10px;
+    gap: 70px;
     .divider{
       margin-right: 3px;
     }
     .leftside{
-      gap: 0;
+      gap: 20px;
     }
     .rightside{
-      gap: 3px;
+      gap: 20px;
     }
-    &-links{
-      gap: 2px;
+    &__links{
+      gap: 20px;
     }
-    &-buttons{
+    &__buttons{
+      gap: 20px;
+    }
+  }
+  .header__content__info{
+    width: 142px;
+  }
+}
+
+@media (max-width: 620px) {
+  .header__menu__media{
+    justify-content: start;
+    gap: 30px;
+    .divider{
+      margin-right: 3px;
+    }
+    .leftside{
+      gap: 10px;
+    }
+    .rightside{
+      gap: 10px;
+    }
+    &__links{
+      gap: 10px;
+    }
+    &__buttons{
       gap: 3px;
     }
   }
-  .header-content-info{
+  .header__content__info{
     width: 142px;
   }
 }
 
 
 @media (max-width: 500px) {
-  .header-menu-media {
-    &-burger {
+  .header__menu__media {
+    &__burger {
       padding-left: 16px;
     }
 
-    &-logo {
+    &__logo {
       margin-left: 16px;
 
       .divider {
@@ -299,38 +325,38 @@
       }
     }
 
-    &-links {
+    &__links {
       display: none;
     }
 
-    &-buttons {
+    &__buttons {
       gap: 16px;
     }
   }
   .header {
-    &-topbar {
+    &__topbar {
       h1 {
         padding-left: 9px;
       }
 
-      &-nav {
+      &__nav {
         display: none;
       }
-      &-nav-slider{
+      &__nav__slider{
         display: flex;
       }
     }
 
-    &-content {
+    &__content {
       flex-direction: column;
       margin: 16px 0 0 16px;
       max-width: 320px;
 
-      &-info-paras {
+      &__info_paras {
         width: 275px;
       }
 
-      &-image {
+      &__image {
         margin-left: -16px !important;
         max-width: 320px;
         //overflow: unset;
