@@ -49,11 +49,13 @@
         line-height: 24px;
         letter-spacing: -0.2px;
         color: #7E7E82;
+        border: 2px solid transparent;
+
       }
 
       a:active {
         border: 2px solid #B8FFEC;
-        margin: -2px;
+        //margin: -2px;
         background: $white;
         border-radius: 3.2px;
       }
@@ -79,17 +81,20 @@
         letter-spacing: -0.2px;
         color: #7E7E82;
         border-radius: 6px;
+        border: 2px solid transparent;
+
       }
 
       a:active {
         border: 2px solid #B8FFEC;
-        margin: -2px;
+        //margin: -2px;
         background: $white;
         border-radius: 6px;
       }
     }
   }
 
+  
   &__content {
     display: flex;
     flex-direction: row;
