@@ -291,6 +291,7 @@ h2 {
       background: none;
       border-bottom: 2px solid $soft-gray;
 
+
       div{
         display: flex;
         //display: inline-flex;
@@ -335,9 +336,9 @@ h2 {
     gap: 1px;
     padding: 0 0 0 8px ;
      overflow: hidden;
-    width: 320px;
+    //width: 320px;
     .services{
-      top:1540px;
+      top:1490px;
       padding-right: 40px;
       --swiper-pagination-bullet-width: 11px;
       --swiper-pagination-bullet-height: 11px;
@@ -357,6 +358,8 @@ h2 {
       border-radius: 6px;
       background: none;
       border-bottom: 2px solid $soft-gray;
+        border-right: 2px solid $soft-gray;
+
         background: $background;
       p{
         color:$menu-text-color;
@@ -505,6 +508,9 @@ display: flex;
 }
 
 @media(max-width: 740px){
+  body{
+    overflow-x: hidden;
+  }
   .services {
     margin: 65px 0 0 0;
     &-wrapper-cards{
@@ -545,12 +551,12 @@ display: flex;
     display:none !important;
   }
   //360px for burger menu
-  .wrapper-body{
-    max-width: 360px;
-  }
-  .main-wrapper{
-    max-width: 320px;
-  }
+  //.wrapper-body{
+  //  max-width: 360px;
+  //}
+  //.main-wrapper{
+  //  max-width: 320px;
+  //}
   .footer{
     flex-direction: column;
     margin-bottom: 20px;
@@ -593,16 +599,3 @@ display: flex;
   }
 }
 
-
-
-//убрать после настройки
-@media(max-width: 1050px){
-  //.side-bar{
-  //  //display: none;
-  //  width: 320px;
-  //}
-  //.main-wrapper{
-  //  display: none;
-  //}
-
-}

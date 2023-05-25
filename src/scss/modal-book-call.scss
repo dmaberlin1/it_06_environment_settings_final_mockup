@@ -128,6 +128,7 @@ h3{
       position: fixed;
       top: 24px;
       right: 230px;
+      //right: 230px;
 
     }
   }
@@ -148,10 +149,16 @@ h3{
   opacity: 0.93;
 }
 
-@media (max-width: 550px) {
-  border: none;
-  &-btn-close {
-    right: 230px;
 
+@media (max-width: 550px) {
+  .modal-book-call{
+    max-width: 100%;
+    padding-top: 100px;
+  //border: none;
+  &-btn-close {
+    top: 24px;
+    left: 30px;
+
+  }
   }
 }

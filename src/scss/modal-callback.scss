@@ -156,14 +156,16 @@ h3{
 
 @media (max-width: 550px){
   .modal-callback {
-    width: 300px;
+    //width: 300px;
+    width: 100%;
     padding-top: 100px;
     border: none;
     &-btn-close {
       background: none;
       position: fixed;
       top: 24px;
-      right: 230px;
+      //right: 230px;
+      left: 30px;
 
     }
   }
