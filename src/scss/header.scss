@@ -61,7 +61,7 @@
       }
     }
 
-    &__nav__slider {
+    &__nav-slider {
       margin: 24px 0 0 20px;
       display: none;
       flex-direction: row;
@@ -101,7 +101,7 @@
     margin: 16px 28px 0 34px;
     gap: 36px;
 
-    &__info {
+    &-info {
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
@@ -112,7 +112,7 @@
       //вариант с заданной шириной блока, для резайза img
       width: 490px;
 
-      &__paras {
+      &-paras {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -124,7 +124,7 @@
         }
       }
 
-      &__btn {
+      &-btn {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -143,13 +143,13 @@
         :hover {
           cursor: pointer;
         }
-        &__img{
+        &-img{
           display: flex;
           flex-direction: column;
         }
       }
     }
-    &__image{
+    &-image{
       display: inline-flex;
 
       img{
@@ -164,7 +164,7 @@
     border-radius: 4px;
   }
 
-  &__menu__media{
+  &__menu-media{
     //display: flex;
     display: none;
     flex-direction: row;
@@ -186,7 +186,7 @@
       background: white;
     }
 
-   &__burger{
+   &-burger{
      padding-left: 24px;
      img{
        height: 40px;
@@ -194,12 +194,12 @@
      }
    }
 
-    &__logo{
+    &-logo{
       display: flex;
       align-items: center;
 
     }
-    &__links{
+    &-links{
       display: flex;
       gap:16px;
       align-items: center;
@@ -208,7 +208,7 @@
       }
     }
 
-    &__buttons {
+    &-buttons {
       display: flex;
       flex-direction: row;
       gap: 16px;
@@ -229,14 +229,14 @@
 
 
 @media (max-width: 1050px) {
-  .header__menu__media{
+  .header__menu-media{
     display: flex;
   }
 
-  .header__topbar__buttons{
+  .header__topbar-buttons{
     display: none;
   }
-  .header__content__image{
+  .header__content-image{
     //margin-left: 50px;
     img{
       max-width: 360px;
@@ -257,7 +257,7 @@
         display: none;
       }
 
-      &__nav__slider {
+      &__nav-slider {
         max-width: 720px;
         display: flex;
       }
@@ -266,7 +266,7 @@
 }
 
 @media (max-width: 760px) {
-  .header__menu__media{
+  .header__menu-media{
     justify-content: start;
     gap: 70px;
     .divider{
@@ -285,13 +285,13 @@
       gap: 20px;
     }
   }
-  .header__content__info{
+  .header__content-info{
     width: 142px;
   }
 }
 
 @media (max-width: 620px) {
-  .header__menu__media{
+  .header__menu-media{
     justify-content: start;
     gap: 30px;
     .divider{
@@ -310,19 +310,19 @@
       gap: 3px;
     }
   }
-  .header__content__info{
+  .header__content-info{
     width: 142px;
   }
 }
 
 
 @media (max-width: 500px) {
-  .header__menu__media {
-    &__burger {
+  .header__menu-media {
+    &-burger {
       padding-left: 16px;
     }
 
-    &__logo {
+    &-logo {
       margin-left: 16px;
 
       .divider {
@@ -330,24 +330,24 @@
       }
     }
 
-    &__links {
+    &-links {
       display: none;
     }
 
-    &__buttons {
+    &-buttons {
       gap: 16px;
     }
   }
   .header {
-    &__topbar {
+    &-topbar {
       h1 {
         padding-left: 9px;
       }
 
-      &__nav {
+      &-nav {
         display: none;
       }
-      &__nav__slider{
+      &-nav-slider{
         display: flex;
       }
     }
@@ -357,11 +357,11 @@
       margin: 16px 0 0 16px;
       max-width: 320px;
 
-      &__info_paras {
+      &-info-paras {
         width: 275px;
       }
 
-      &__image {
+      &-image {
         margin-left: -16px !important;
         max-width: 320px;
         //overflow: unset;
